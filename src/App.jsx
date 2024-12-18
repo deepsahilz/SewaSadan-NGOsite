@@ -1,6 +1,7 @@
-import { useState } from 'react'
-import Poll from './components/poll'
+import React from 'react'
 
+  import Poll from './components/poll'
+import Profile from './components/profile'
 function App() {
 
   return (
@@ -8,7 +9,7 @@ function App() {
     <Nav/>
     <HeroSection/>
     <Poll/>
-    <Profile></Profile>
+    <Profile/>
     
     
     </>
