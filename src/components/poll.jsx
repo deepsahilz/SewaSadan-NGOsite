@@ -2,7 +2,7 @@ import React from 'react'
 
 const poll = () => {
   return (
-    <div>poll</div>
+    <div>tatti</div>
   )
 }
 
