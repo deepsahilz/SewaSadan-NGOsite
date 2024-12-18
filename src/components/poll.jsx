@@ -2,7 +2,7 @@ import React from 'react'
 
 const poll = () => {
   return (
-    <div>axsc</div>
+    <div>panda</div>
   )
 }
 
