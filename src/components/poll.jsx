@@ -1,7 +1,7 @@
 import React from 'react'
 import dp from '../assets/images/dp6.png'
 
-const poll = () => {
+const Poll = () => {
     const memberdata = [
         {name:"harjinder singh", des:"chairman",imgsrc:"#" },
         {name:"manjit singh", des:"comittee member",imgsrc:"#" },
@@ -37,4 +37,4 @@ const poll = () => {
   )
 }
 
-export default poll
+export default Poll

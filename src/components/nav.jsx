@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const nav = () => {
+const Nav = () => {
 
     const [mobileView,setMobileView] = useState(false);
 
@@ -18,4 +18,4 @@ const nav = () => {
   )
 }
 
-export default nav
+export default Nav
