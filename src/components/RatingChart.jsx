@@ -155,8 +155,9 @@ const RatingChart = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-lg">
-      <h2 className="text-2xl font-bold mb-4 text-center">Real-Time Ratings by Minute</h2>     
+    <div className="p-6 border bg-[#eee]">
+      <h2 className="text-2xl font-bold mb-14 text-center mt-8">Real-Time Ratings by Minute</h2>     
+    <div className="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-lg border">
 
       <div className="flex justify-around mb-6">
         <div className="bg-green-100 text-green-800 font-bold text-2xl p-4 rounded-lg w-32 text-center">
@@ -167,12 +168,15 @@ const RatingChart = () => {
         </div>
       </div>
 
-      {/* <div >
-      </div> */}
-      <Line data={data} options={options} ref={chartRef} />
+      <div className=''>
+        <Line className="" data={data} options={options} ref={chartRef} />
+      </div>
 
+      
 
-      <div className="flex justify-center gap-4 mt-6 mb-6">
+    </div>
+
+    <div className="flex justify-center gap-4 mt-6 mb-6">
         <button
           onClick={handleThumbsUp}
           className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg flex items-center"
@@ -201,7 +205,6 @@ const RatingChart = () => {
           Reset
         </button>
       </div>
-
     </div>
   );
 };
