@@ -1,9 +1,8 @@
 import React from 'react'
 import Nav from './components/nav'
 import Poll from './components/poll'
-import Profile from './components/profile'
-import RatingChart from './components/RatingChart'
 import HeroSection from './components/heroSection'
+import ProfileCard from './components/profile'
 function App() {
 
   return (
@@ -11,8 +10,9 @@ function App() {
     <Nav/>
     <HeroSection/>
     <Poll/>
-    <Profile/>
-    <RatingChart/>
+    <div>
+    <ProfileCard/>
+    </div>
     
     
     </>
