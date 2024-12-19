@@ -14,7 +14,7 @@ function App() {
     <HeroSection/>
     <Poll/>
     <Contact2/>
-=======
+
     <div className="p-10">
       {profileData.map((profile) => (
         <ProfileCard
