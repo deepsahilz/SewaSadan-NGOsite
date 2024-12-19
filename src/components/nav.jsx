@@ -5,7 +5,7 @@ const Nav = () => {
     const [mobileView,setMobileView] = useState(false);
 
   return (
-    <div className='bg-[white] border w-full h-[4rem] top-0 z-2 fixed md:px-20 px-5 flex justify-between items-center'>
+    <div className='bg-[white] border w-full h-[4rem] top-0 z-10 fixed md:px-20 px-5 flex justify-between items-center'>
         <div>
             <h1 className='bold uppercase'>logo </h1>
         </div>

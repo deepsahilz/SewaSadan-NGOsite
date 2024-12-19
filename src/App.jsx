@@ -5,6 +5,8 @@ import HeroSection from './components/heroSection'
 import Contact2 from './components/contact2'
 import ProfileCard from './components/ProfileCard'
 import profileData from './components/ProfileData'
+import Ghostboard from './components/ghostboard'
+
 
 function App() {
 
@@ -12,9 +14,9 @@ function App() {
     <>
     <Nav/>
     <HeroSection/>
-    <Poll/>
-    <Contact2/>
+    {/* <Poll/> */}
 
+    <Ghostboard/>
     <div className="p-10">
       {profileData.map((profile) => (
         <ProfileCard
@@ -26,6 +28,7 @@ function App() {
       ))}
     </div> 
     
+    <Contact2/>
     
     </>
   )
