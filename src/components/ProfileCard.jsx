@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const ProfileCard = () => {
+const ProfileCard = ({ name, role, image }) => {
   const [likes, setLikes] = useState(0);
   const [dislikes, setDislikes] = useState(0);
   const [userAction, setUserAction] = useState(null); // 'like', 'dislike', or null
@@ -32,16 +32,16 @@ const ProfileCard = () => {
   };
 
   return (
-    <div className="max-w-2xl] mx-auto my-10 bg-gradient-to-br from-gray-800 via-gray-900 to-black text-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-500">
+    <div className="max-w-2xl mx-auto my-10 bg-gradient-to-br from-gray-800 via-gray-900 to-black text-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-500">
       <div className="flex items-center p-6">
         <img
           className="w-40 h-fit object-cover border-4 border-blue-500 rounded-[2%] shadow-lg mr-6"
-          src="src/assets/images/WhatsApp Image 2024-12-19 at 19.41.34_eba1b8ab.jpg"
-          alt="Profile"
+          src={image}
+          alt={name}
         />
         <div className="flex-1">
-          <h2 className="text-3xl font-bold mb-2">Rajan Nagpal</h2>
-          <p className="text-blue-400 mb-4">Secretary</p>       
+          <h2 className="text-3xl font-bold mb-2">{name}</h2>
+          <p className="text-blue-400 mb-4">{role}</p>
         </div>
       </div>
 
