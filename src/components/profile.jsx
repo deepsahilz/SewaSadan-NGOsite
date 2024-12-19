@@ -41,10 +41,7 @@ const ProfileCard = () => {
         />
         <div className="flex-1">
           <h2 className="text-3xl font-bold mb-2">Rajan Nagpal</h2>
-          <p className="text-blue-400 mb-4">Secretary</p>
-          <p className="text-gray-400 text-sm">
-            Innovating the future, one step at a time.
-          </p>
+          <p className="text-blue-400 mb-4">Secretary</p>       
         </div>
       </div>
 
