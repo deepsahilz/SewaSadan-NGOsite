@@ -4,6 +4,8 @@ import Poll from './components/poll'
 import Profile from './components/profile'
 import RatingChart from './components/RatingChart'
 import HeroSection from './components/heroSection'
+import Contact2 from './components/contact2'
+
 function App() {
 
   return (
@@ -11,8 +13,9 @@ function App() {
     <Nav/>
     <HeroSection/>
     <Poll/>
-    <Profile/>
-    <RatingChart/>
+    {/* <Profile/> */}
+    {/* <RatingChart/> */}
+    <Contact2/>
     
     
     </>
