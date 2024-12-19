@@ -167,9 +167,10 @@ const RatingChart = () => {
         </div>
       </div>
 
-      <div>
-        <Line data={data} options={options} ref={chartRef} />
-      </div>
+      {/* <div >
+      </div> */}
+      <Line data={data} options={options} ref={chartRef} />
+
 
       <div className="flex justify-center gap-4 mt-6 mb-6">
         <button
