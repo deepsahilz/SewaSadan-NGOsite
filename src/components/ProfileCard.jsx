@@ -94,7 +94,7 @@ const ProfileCard = ({ name, role, image, bio }) => {
 
               <button
                 onClick={handleKnowMore}
-                className="bg-yellow-500 hover:bg-yellow-600 px-4 py-2 rounded-md text-lg font-semibold transition shadow-md text-white w-[8rem]"
+                className="bg-yellow-500 hover:bg-yellow-600 px-4 py-2 rounded-md text-lg font-semibold transition shadow-md text-white "
               > 
                 {knowMore ? 'Show Less' : 'Know More'}
               </button>
