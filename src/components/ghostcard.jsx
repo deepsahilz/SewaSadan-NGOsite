@@ -34,8 +34,8 @@ const ghostcard = ({ name, role, image }) => {
   return (
     <>
     
-    <div className="p-8 lg:even:translate-y-8 border-2  bg-gradient-to-br from-gray-800 via-gray-900 to-black text-white rounded-xl shadow-lg ">
-        
+    <div className="p-8 b border-2  bg-gradient-to-br from-gray-800 via-gray-900 to-black text-white rounded-xl shadow-lg ">
+
       <div className="flex sm:flex-row flex-col items-center gap-5 ">
 
         <div className='min-w-40 w-40 h-fit border-2 border-blue-600 shadow-lg overflow-hidden rounded-[8%] '>
