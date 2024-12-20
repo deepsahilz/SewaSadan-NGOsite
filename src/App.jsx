@@ -24,6 +24,7 @@ function App() {
           name={profile.name}
           role={profile.role}
           image={profile.image}
+          bio={profile.bio}
         />
       ))}
     </div> 

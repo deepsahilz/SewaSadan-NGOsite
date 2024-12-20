@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 
-const ProfileCard = ({ name, role, image }) => {
+const ProfileCard = ({ name, role, image, bio }) => {
   const [likes, setLikes] = useState(0);
   const [dislikes, setDislikes] = useState(0);
   const [userAction, setUserAction] = useState(null); // 'like', 'dislike', or null
+  const [knowMore, setKnowMore] = useState(false); // Toggle for additional info
 
   const handleLike = () => {
     if (userAction === 'like') {
@@ -31,45 +32,81 @@ const ProfileCard = ({ name, role, image }) => {
     }
   };
 
+  const handleKnowMore = () => {
+    setKnowMore(!knowMore);
+  };
+
   return (
-    <div className="max-w-2xl mx-auto my-10 bg-gradient-to-br from-gray-800 via-gray-900 to-black text-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-500">
-      <div className="flex items-center p-6">
-        <img
-          className="w-40 h-fit object-cover border-4 border-blue-500 rounded-[2%] shadow-lg mr-6"
-          src={image}
-          alt={name}
-        />
-        <div className="flex-1">
-          <h2 className="text-3xl font-bold mb-2">{name}</h2>
-          <p className="text-blue-400 mb-4">{role}</p>
+    <div className="max-w-3xl mx-auto my-10 bg-white text-gray-900 rounded-xl shadow-2xl border border-gray-300 overflow-hidden">
+      <div className="flex flex-col md:flex-row">
+        {/* Image Section */}
+        <div className="bg-gradient-to-r from-orange-500 via-yellow-400 to-white flex-shrink-0 p-6 flex items-center justify-center">
+          <div className="w-40 h-50 overflow-hidden rounded-md border-4 border-blue-700 shadow-md">
+            <img
+              className="w-full h-full object-cover"
+              src={image}
+              alt={name}
+            />
+          </div>
+        </div>
+
+        {/* Details Section */}
+        <div className=" flex-1 p-6 flex flex-col justify-between">
+          <div>
+            <h2 className="text-3xl md:text-4xl font-bold text-blue-800 mb-2">{name}</h2>
+            <p className="text-orange-600 font-semibold mb-4">{role}</p>
+            
+          </div>
+
+          {/* Buttons Section */}
+          <div>
+            <div className="flex gap-4 mb-4">
+              <button
+                onClick={handleLike}
+                className={`flex items-center gap-2 px-4 py-2 rounded-full text-lg font-semibold transition ${
+                  userAction === 'like'
+                    ? 'bg-blue-700 hover:bg-blue-800 text-white'
+                    : 'bg-blue-600 hover:bg-blue-700 text-white'
+                }`}
+              >
+                👍 Like
+                <span className="bg-white text-blue-700 px-3 py-1 rounded-full">{likes}</span>
+              </button>
+
+              <button
+                onClick={handleDislike}
+                className={`flex items-center gap-2 px-4 py-2 rounded-full text-lg font-semibold transition ${
+                  userAction === 'dislike'
+                    ? 'bg-orange-700 hover:bg-orange-800 text-white'
+                    : 'bg-orange-600 hover:bg-orange-700 text-white'
+                }`}
+              >
+                👎 Dislike
+                <span className="bg-white text-orange-700 px-3 py-1 rounded-full">{dislikes}</span>
+              </button>
+            </div>
+
+            
+          </div>           
+              <button
+                onClick={handleKnowMore}
+                className="bg-yellow-500 hover:bg-yellow-600 px-4 py-2 rounded-md text-lg font-semibold transition shadow-md text-white w-full"
+              >
+                {knowMore ? 'Show Less' : 'Know More'}
+              </button>
+
+              {knowMore && (
+              
+                <p className=" p-4 text-gray-700 leading-relaxed w-full ">
+                  {bio || 'No additional information available.'}
+                </p>
+              )}
+            
         </div>
       </div>
 
-      <div className="flex gap-6 mb-6 justify-center">
-        <button
-          onClick={handleLike}
-          className={`flex items-center gap-2 px-6 py-2 rounded-full text-lg font-semibold transition ${
-            userAction === 'like'
-              ? 'bg-blue-600 hover:bg-blue-700'
-              : 'bg-blue-500 hover:bg-blue-600'
-          }`}
-        >
-          👍 Like
-          <span className="bg-white text-blue-500 px-3 py-1 rounded-full">{likes}</span>
-        </button>
+            
 
-        <button
-          onClick={handleDislike}
-          className={`flex items-center gap-2 px-6 py-2 rounded-full text-lg font-semibold transition ${
-            userAction === 'dislike'
-              ? 'bg-red-600 hover:bg-red-700'
-              : 'bg-red-500 hover:bg-red-600'
-          }`}
-        >
-          👎 Dislike
-          <span className="bg-white text-red-500 px-3 py-1 rounded-full">{dislikes}</span>
-        </button>
-      </div>
     </div>
   );
 };
