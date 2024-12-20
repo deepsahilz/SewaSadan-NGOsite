@@ -4,7 +4,7 @@ const profileData = [
     name: 'Gurmit Singh',
     role: 'President',
     image: 'src/assets/images/WhatsApp Image 2024-12-19 at 21.01.47_2c1ef4aa.jpg',
-    bio: 'sdcscuavcyuvcvwuwcuwcwbcucbybwyccwcdfvbvuvcccbdbcddvjvfbdvsdvjdvjdvjdvdjvdfjvdvbjdj vjdvjdvjvisdw q jwe  e ggj  idveiveivevieiviebvbrevvbvebvrebg',
+    bio: "%$*%$! error koi nai si,tera dummy text ik continous single word si, jo word break nai ho sakda,es lai exceed ho rea si, oh v solve kita ja sakda a (break-words) property nll, but zarurat ni a",
   },
   {
     id: 2,

@@ -19,6 +19,7 @@ const ProfileCard = ({ name, role, image, bio }) => {
     }
   };
 
+
   const handleDislike = () => {
     if (userAction === 'dislike') {
       setDislikes(dislikes - 1);
@@ -37,8 +38,9 @@ const ProfileCard = ({ name, role, image, bio }) => {
   };
 
   return (
-    <div className="max-w-3xl mx-auto my-10 bg-white text-gray-900 rounded-xl shadow-2xl border border-gray-300 overflow-hidden">
+    <div className="max-w-3xl mx-auto my-10 bg-white text-gray-900 rounded-xl shadow-2xl border border-gray-300 ">
       <div className="flex flex-col md:flex-row">
+
         {/* Image Section */}
         <div className="bg-gradient-to-r from-orange-500 via-yellow-400 to-white flex-shrink-0 p-6 flex items-center justify-center">
           <div className="w-40 h-50 overflow-hidden rounded-md border-4 border-blue-700 shadow-md">
@@ -51,7 +53,8 @@ const ProfileCard = ({ name, role, image, bio }) => {
         </div>
 
         {/* Details Section */}
-        <div className=" flex-1 p-6 flex flex-col justify-between">
+        <div className=" flex-1 p-6 flex flex-col justify-between ">
+
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-blue-800 mb-2">{name}</h2>
             <p className="text-orange-600 font-semibold mb-4">{role}</p>
@@ -87,20 +90,22 @@ const ProfileCard = ({ name, role, image, bio }) => {
             </div>
 
             
-          </div>           
+          </div>     
+
               <button
                 onClick={handleKnowMore}
-                className="bg-yellow-500 hover:bg-yellow-600 px-4 py-2 rounded-md text-lg font-semibold transition shadow-md text-white w-full"
-              >
+                className="bg-yellow-500 hover:bg-yellow-600 px-4 py-2 rounded-md text-lg font-semibold transition shadow-md text-white w-[8rem]"
+              > 
                 {knowMore ? 'Show Less' : 'Know More'}
               </button>
 
               {knowMore && (
-              
-                <p className=" p-4 text-gray-700 leading-relaxed w-full ">
-                  {bio || 'No additional information available.'}
+                <p className=" p-4 text-gray-700 leading-relaxed break-words">
+                  {/* {bio || 'No additional information available.'} */}
+                  {bio}
                 </p>
-              )}
+                )}
+    
             
         </div>
       </div>
