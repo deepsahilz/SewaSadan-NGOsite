@@ -5,6 +5,7 @@ import Contact2 from './components/contact2'
 import ProfileCard from './components/ProfileCard'
 import profileData from './components/ProfileData'
 import Ghostboard from './components/ghostboard'
+import Hero2 from './components/hero2'
 
 
 function App() {
@@ -12,7 +13,9 @@ function App() {
   return (
     <>
     <Nav/>
-    <HeroSection/>
+    <Hero2/>
+  
+    {/* <HeroSection/> */}
     {/* <Poll/> */}
 
     <Ghostboard/>

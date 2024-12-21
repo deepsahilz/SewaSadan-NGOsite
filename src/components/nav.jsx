@@ -4,30 +4,31 @@ const Nav = () => {
   const [mobileView, setMobileView] = useState(false);
 
   return (
-    <div className="bg-gradient-to-r from-orange-400 via-yellow-300 to-orange-400 border w-full h-[4rem] top-0 z-10 fixed px-5 md:px-20 flex justify-between items-center">
+    // bg-gradient-to-r from-orange-400 via-yellow-300 to-orange-400
+    <div className="bg-white border-b drop-shadow-md border-transparent w-full h-[4rem] top-0 z-10 fixed px-5 md:px-20 flex justify-between items-center">
       {/* Logo Section */}
       <div>
-        <h1 className="text-white font-bold text-lg uppercase">
-          <span className="text-yellow-600">Seva</span> Sadan
+        <h1 className="text-orange-400 font-bold font-rejouice text-[1.45rem] uppercase">
+          <span className=" text-orange-500 ">Seva</span>Sadan
         </h1>
       </div>
 
       {/* Desktop Navigation */}
-      <div className="hidden md:flex gap-8 text-xl text-white font-medium">
-        <a href="#" className="hover:text-yellow-600 transition duration-300">
+      <div className="hidden md:flex gap-10 text-[18px] text-black font-medium">
+        <a href="#" className="text-orange-500 transition duration-300">
           Home
         </a>
-        <a href="#" className="hover:text-yellow-600 transition duration-300">
+        <a href="#" className="hover:text-orange-500 transition duration-300">
           Achievements
         </a>
-        <a href="#" className="hover:text-yellow-600 transition duration-300">
+        <a href="#" className="hover:text-orange-500 transition duration-300">
           Care Takers
         </a>
       </div>
 
       {/* Mobile Menu Button */}
       <div
-        className="md:hidden text-white cursor-pointer"
+        className="md:hidden text-black cursor-pointer"
         onClick={() => setMobileView(!mobileView)}
       >
         <svg
