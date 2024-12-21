@@ -1,6 +1,5 @@
 import React from 'react'
 import Nav from './components/nav'
-import Poll from './components/poll'
 import HeroSection from './components/heroSection'
 import Contact2 from './components/contact2'
 import ProfileCard from './components/ProfileCard'
