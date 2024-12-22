@@ -6,6 +6,7 @@ import ProfileCard from './components/ProfileCard'
 import profileData from './components/ProfileData'
 import Ghostboard from './components/ghostboard'
 import Hero2 from './components/hero2'
+import NameCarousel from './components/NameCarousel'
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     <>
     <Nav/>
     <Hero2/>
+    <NameCarousel/>
   
     {/* <HeroSection/> */}
     {/* <Poll/> */}
