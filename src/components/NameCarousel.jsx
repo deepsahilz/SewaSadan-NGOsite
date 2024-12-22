@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 
+//its called marquee, not carousel.
 const NameCarousel = () => {
   const carouselRef = useRef(null);
 

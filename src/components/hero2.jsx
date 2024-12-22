@@ -9,9 +9,9 @@ const hero2 = () => {
                 
                 <div className='w-full absolute text-center md:text-start  bottom-0 pb-[4rem] font-nb px-5 md:px-20  '>
                   <h4 className='italic text-zinc-200'>former name</h4>
-                  <div className='text-white font-bold text-2xl md:text-5xl mb-5'>
-                    <h1 style={{textShadow:'2px 3px 4px rgba(0,0,0,0.5)'}} className=' tracking-tight '>SHRI  GURU<br/> NANAK  DEV SAHIB JI</h1>
-                    <h1  className='bg-orange-500 inline-block text-[2rem] md:text-[3.4rem] leading-none mt-2 md:px-4 px-2 py-1 rounded-md'>SAMAJ SEWA SANSTHA</h1>
+                  <div className='text-white leading-[3rem] font-bold text-2xl md:text-[3rem] mb-5'>
+                    <h1 style={{textShadow:'2px 3px 4px rgba(0,0,0,0.5)'}} className=' '>SHRI  GURU<br/> NANAK  DEV SAHIB JI<br/>SAMAJ SEWA SANSTHA</h1>
+                    {/* <h1  className='bg-orange-500 inline-block text-[2rem] md:text-[3.4rem] leading-none mt-2 md:px-4 px-2 py-1 rounded-md'>SAMAJ SEWA SANSTHA</h1> */}
                   </div>
 
                   <div className='text-white'>
