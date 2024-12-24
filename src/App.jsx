@@ -10,20 +10,22 @@ import NameCarousel from './components/NameCarousel'
 import Marquee from './components/marquee'
 import Nav2 from './components/nav2'
 import HeroSection2 from './components/heroSection2'
+import Members from './components/members'
 
 function App() {
 
   return (
     <>
     {/* <Nav/> */}
+    {/* <Hero2/> */}
+
     <Nav2/>
     <HeroSection/>
-    {/* <Hero2/> */}
     <Marquee/>
     <HeroSection2/>
-    {/* <Poll/> */}
+    <Members/>
+    {/* <Ghostboard/> */}
 
-    <Ghostboard/>
     <div className="p-10">
       {profileData.map((profile) => (
         <ProfileCard
