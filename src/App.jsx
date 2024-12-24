@@ -8,18 +8,19 @@ import Ghostboard from './components/ghostboard'
 import Hero2 from './components/hero2'
 import NameCarousel from './components/NameCarousel'
 import Marquee from './components/marquee'
-
+import Nav2 from './components/nav2'
+import HeroSection2 from './components/heroSection2'
 
 function App() {
 
   return (
     <>
-    <Nav/>
-    <Hero2/>
-    {/* <NameCarousel/> */}
+    {/* <Nav/> */}
+    <Nav2/>
+    <HeroSection/>
+    {/* <Hero2/> */}
     <Marquee/>
-  
-    {/* <HeroSection/> */}
+    <HeroSection2/>
     {/* <Poll/> */}
 
     <Ghostboard/>

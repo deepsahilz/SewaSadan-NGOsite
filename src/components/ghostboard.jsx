@@ -34,7 +34,7 @@ const ghostboard = () => {
   return (
 
     <div className='px-5 sm:px-10 lg:px-20  py-10 bg-zinc-100'>
-        <h1 className='text-center mt-10 md:text-5xl text-3xl mb-10 font-rejouice'>OUR TRUSTEES</h1>
+        <h1 className='text-center text-zinc-900 font-semibold mt-10 md:text-5xl text-3xl mb-10 font-nb'>OUR TRUSTEES</h1>
 
         <div className=' grid grid-cols-1 lg:grid-cols-2 gap-6'>
 

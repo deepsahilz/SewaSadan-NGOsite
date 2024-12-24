@@ -2,26 +2,23 @@ import React from 'react';
 
 const HeroSection = () => {
   return (
-    <section className="relative w-full h-screen">
-      <img 
-        src="src/assets/images/hero.jpg" 
-        alt="Hero Background" 
-        className="absolute inset-0 w-full h-full object-cover" 
-      />
-      {/* Optional overlay */}
-      <div className="absolute inset-0 bg-black opacity-10">
-      <div className="flex items-center justify-center h-full text-center text-white px-6 sm:px-12">
-        <div className="max-w-4xl w-full">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-          SHRI GURU NANAK DEV SAHIB JI SAMAJ SEWA SANSTHA
-          </h1>
-          <p className="mt-4 text-lg sm:text-xl md:text-2xl lg:text-3xl">
-            Your journey to greatness starts here
-          </p>
-        </div>
-      </div>
-      </div>
-    </section>
+    <div className='bg-zinc-100 h-[95vh] pt-20 overflow-hidden'>
+      
+            <div className='w-full z-20 absolute  text-center  pb-[4rem] font-nb mt-[15rem] md:mt-[10rem] px-5 md:px-20  '>
+                 
+                  <div className='text-zinc-800  leading-[3rem] font-bold text-4xl md:text-[3rem] mb-5'>
+                    <h1 className=' '>SHRI  GURU NANAK  DEV SAHIB JI<br/>SAMAJ SEWA SANSTHA</h1>
+                  </div>
+
+                  <div className='text-zinc-700 w-full flex justify-center'>
+                    <p className='md:w-[25rem] text-center w-[90vw]'>this is a dummy text that will be suitably replaced once i got to know what this charitable organisation do.</p>
+                  </div>
+
+            </div>
+
+            {/* <div style={{background: 'radial-gradient(circle, #1e3a8a 1%,#f4f4f5 80%)',}} className='absolute bottom-0 m-10  h-[25rem] w-[25rem]'></div> */}
+               
+    </div>
   );
 };
 
