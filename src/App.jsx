@@ -24,20 +24,23 @@ function App() {
     <HeroSection/>
     <Marquee/>
     <HeroSection2/>
-    <Members/>
+    {/* <Members/> */}
     {/* <Ghostboard/> */}
 
-    <div className="p-10">
-      {profileData.map((profile) => (
-        <ProfileCard
+    <div className='py-20 px-10 lg:px-20  bg-zinc-100'>
+      <h1 className='text-center text-3xl text-zinc-800 font-semibold mb-16'>On Board Members</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5  ">
+        {profileData.map((profile) => (
+          <ProfileCard
           key={profile.id}
           name={profile.name}
           role={profile.role}
           image={profile.image}
           bio={profile.bio}
-        />
-      ))}
-    </div> 
+          />
+          ))}
+      </div> 
+    </div>  
     
     <Footer/>
     

@@ -37,11 +37,11 @@ const ProfileCard = ({ name, role, image, bio }) => {
   };
 
   return (
-    <div className="max-w-lg mx-auto my-10 bg-white text-gray-900 rounded-xl shadow-lg border border-gray-300 overflow-hidden">
-      <div className="flex flex-col md:flex-row items-center md:items-stretch">
+    <div className={`w-full  mx-auto bg-white text-gray-900 rounded-xl shadow-lg border border-gray-300 overflow-hidden`}>
+      <div className="flex flex-col w-full  items-center md:items-stretch">
         {/* Image Section */}
-        <div className="bg-gradient-to-r from-orange-500 via-yellow-400 to-white w-full md:w-1/3 p-6 flex justify-center items-center">
-          <div className="w-32 h-32 md:w-40 md:h-40 overflow-hidden rounded-full border-4 border-blue-700 shadow-md">
+        <div className=" w-full p-6 flex justify-center items-center">
+          <div className="w-32 h-32 md:w-[11rem] md:h-[11rem] overflow-hidden rounded-full border-4 border-orange-600 shadow-md">
             <img
               className="w-full h-full object-cover"
               src={image}
@@ -51,41 +51,44 @@ const ProfileCard = ({ name, role, image, bio }) => {
         </div>
 
         {/* Details Section */}
-        <div className="flex-1 p-6 flex flex-col justify-between">
+        <div className="flex-1 w-full items-center px-6 pb-6 flex flex-col justify-between">
+
           <div>
-            <h2 className="text-2xl md:text-3xl font-bold text-blue-800 mb-2">
+            <h2 className="text-2xl md:text-2xl truncate font-bold text-zinc-900 mb-2">
               {name}
             </h2>
-            <p className="text-orange-600 font-semibold mb-4">{role}</p>
+            <p className="text-zinc-500 font-semibold mb-4">{role}</p>
           </div>
 
           {/* Buttons Section */}
           <div>
-            <div className="flex gap-4 mb-4">
+            <div className="flex  gap-4 mb-4">
               <button
                 onClick={handleLike}
-                className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm md:text-lg font-semibold transition ${
+                className={`flex items-center border-2 border-blue-600  gap-2 px-4   rounded-full text-sm md:text-lg font-semibold transition 
+                ${
                   userAction === 'like'
-                    ? 'bg-blue-700 hover:bg-blue-800 text-white'
-                    : 'bg-blue-600 hover:bg-blue-700 text-white'
-                }`}
+                    ? 'bg-blue-600  text-white'
+                    : '  text-black hover:bg-blue-600'
+                }
+                `}
               >
-                👍 Like
-                <span className="bg-white text-blue-700 px-3 py-1 rounded-full">
+                👍
+                <span className=" ">
                   {likes}
                 </span>
               </button>
 
               <button
                 onClick={handleDislike}
-                className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm md:text-lg font-semibold transition ${
+                className={`flex items-center border-2 border-orange-600 gap-2 px-4 py-2 rounded-full text-sm md:text-lg font-semibold transition ${
                   userAction === 'dislike'
-                    ? 'bg-orange-700 hover:bg-orange-800 text-white'
-                    : 'bg-orange-600 hover:bg-orange-700 text-white'
+                    ? 'bg-orange-600  text-white'
+                    : '  text-black hover:bg-orange-600'
                 }`}
               >
-                👎 Dislike
-                <span className="bg-white text-orange-700 px-3 py-1 rounded-full">
+                👎
+                <span className="text-black">
                   {dislikes}
                 </span>
               </button>
@@ -93,10 +96,10 @@ const ProfileCard = ({ name, role, image, bio }) => {
           </div>
 
           {/* Know More Section */}
-          <div>
+          <div className='w-full'>
             <button
               onClick={handleKnowMore}
-              className="bg-yellow-500 hover:bg-yellow-600 px-4 py-2 rounded-md text-sm md:text-lg font-semibold transition shadow-md text-white w-full"
+              className="bg-orange-500  px-4 py-2 rounded-md text-sm md:text-lg font-semibold transition  text-white w-full"
             >
               {knowMore ? 'Show Less' : 'Know More'}
             </button>
@@ -108,6 +111,7 @@ const ProfileCard = ({ name, role, image, bio }) => {
             )}
           </div>
         </div>
+
       </div>
     </div>
   );
