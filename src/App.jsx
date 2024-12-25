@@ -1,7 +1,7 @@
 import React from 'react'
 import Nav from './components/nav'
 import HeroSection from './components/heroSection'
-import Contact2 from './components/contact2'
+import Contact2 from './components/Footer'
 import ProfileCard from './components/ProfileCard'
 import profileData from './components/ProfileData'
 import Ghostboard from './components/ghostboard'
@@ -11,6 +11,7 @@ import Marquee from './components/marquee'
 import Nav2 from './components/nav2'
 import HeroSection2 from './components/heroSection2'
 import Members from './components/members'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -38,7 +39,7 @@ function App() {
       ))}
     </div> 
     
-    <Contact2/>
+    <Footer/>
     
     </>
   )
