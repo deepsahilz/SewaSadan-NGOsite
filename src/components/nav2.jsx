@@ -8,7 +8,7 @@ const nav2 = () => {
           {/* Logo Section */}
           <div>
             <h1 className="text-orange-400 font-bold font-rejouice text-[1.45rem] uppercase">
-              <span className=" text-orange-500 ">Seva</span>Sadan
+              <span className=" text-orange-500 ">SGNDSJ</span>SSS
             </h1>
           </div>
     
